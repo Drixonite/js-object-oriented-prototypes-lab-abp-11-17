@@ -4,10 +4,10 @@ function BoardMember(name, homeState, training){
   this.training = training
 }
 
-function veto(){
+  this.prototype.veto = function(){
     return "No, I must disagree"
   }
-function approve(){
+  this.prototype.approve = function(){
     return 'You can do that!'
   }
   this.prototype.doCharity = function(){
@@ -22,7 +22,7 @@ function approve(){
     return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
   }
 
-  this.prototype.veto = function(){
+function veto(){
     return "No, I must disagree"
   }
   this.prototype.approve = function(){
